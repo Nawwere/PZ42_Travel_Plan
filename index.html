@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Plan — ПЗ 42</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+      </header>
+      <div class="layout">
+        <section class="card">
+          <h2>Куда отправимся?</h2>
+          <p class="muted">
+            Программа последовательно получает город, погоду и совет.
+          </p>
+          <div class="field">
+            <label for="city-select">Город</label>
+            <select id="city-select">
+              <option value="spb">Санкт-Петербург</option>
+              <option value="kazan">Казань</option>
+              <option value="unknown">Неизвестный город</option>
+            </select>
+          </div>
+          <div class="controls">
+            <button class="btn btn--primary" id="plan-button">
+              Составить совет
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Результат</h2>
+          <div class="output" id="result" aria-live="polite">
+            Здесь появится рекомендация.
+          </div>
+          <p class="status" id="status" role="status">Ожидание выбора.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
